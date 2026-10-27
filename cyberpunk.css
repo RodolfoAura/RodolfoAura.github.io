@@ -70,3 +70,38 @@
 .emblem-node{fill:#00f0ff}
 .core-caption{position:absolute;bottom:13%;color:#8fd9e1;font:600 9px 'IBM Plex Mono',monospace;letter-spacing:2px}
 @media(max-width:760px){.core-caption{font-size:7px;bottom:12%}}
+
+
+/* V4 signature system: header wordmark + frameless holographic core */
+.brand-v4{gap:11px;letter-spacing:0;align-items:center}
+.brand-sigil{width:49px;height:49px;flex:none;display:grid;place-items:center;position:relative;background:linear-gradient(140deg,#0a2732,#0e141d);border-left:2px solid var(--cyan);border-bottom:2px solid #ff2a6d;clip-path:polygon(0 0,75% 0,100% 25%,100% 100%,0 100%)}
+.brand-sigil:before{content:"";position:absolute;top:3px;right:3px;width:11px;height:2px;background:var(--yellow)}
+.brand-sigil svg{width:36px;height:36px;fill:none;stroke:#00f0ff;stroke-width:3.6;stroke-linecap:square;stroke-linejoin:bevel;filter:drop-shadow(0 0 5px #00f0ff60)}
+.brand-sigil svg .sigil-accent{stroke:#ff2a6d;stroke-width:2}
+.brand-wordmark{display:flex;flex-direction:column;line-height:1;gap:4px}
+.brand-pre,.brand-post{font:600 8px 'IBM Plex Mono',monospace;color:#7299aa;letter-spacing:1.7px}
+.brand-main{font:900 25px 'Barlow Condensed',sans-serif;letter-spacing:1.4px;color:#f1f7f8;white-space:nowrap}
+.brand-slash{color:var(--cyan);padding:0 3px;text-shadow:0 0 9px #00f0ff}
+.brand-post{font-size:7px;color:#ff798f}
+.core.core-v4{width:300px;height:300px;position:relative;background:transparent!important;border:0!important;box-shadow:none!important;clip-path:none!important;display:grid;place-items:center;isolation:isolate}
+.core-v4:before{content:"";position:absolute;width:85%;height:85%;border-radius:50%;background:radial-gradient(circle,#00f0ff16,transparent 64%);filter:blur(12px);animation:holo-breathe 3.5s ease-in-out infinite}
+.core-v4:after{content:"";position:absolute;inset:15%;border-radius:50%;border:1px solid #00f0ff24;box-shadow:0 0 26px #00f0ff1a;pointer-events:none}
+.holo-mark{position:relative;z-index:2;width:82%;height:82%;overflow:visible;filter:drop-shadow(0 0 12px #00f0ff90);animation:holo-float 5s ease-in-out infinite}
+.holo-wing{stroke-dasharray:210;animation:holo-dash 7s linear infinite}
+.wing-right{animation-direction:reverse}
+.holo-pulse{animation:holo-pulse 2.5s ease-in-out infinite}
+.holo-beam{position:absolute;height:200px;width:2px;background:linear-gradient(transparent,#00f0ff44,transparent);filter:blur(3px)}
+.holo-hud{position:absolute;z-index:3;width:89%;display:flex;justify-content:space-between;gap:12px;color:#89d9e2;font:600 8px 'IBM Plex Mono',monospace;letter-spacing:1.2px}
+.holo-hud-top{top:18px}.holo-hud-bottom{bottom:15px}.holo-hud span:last-child{color:#fcee09}
+@keyframes holo-float{0%,100%{transform:translateY(2px)}50%{transform:translateY(-7px)}}
+@keyframes holo-breathe{50%{opacity:.35;transform:scale(1.11)}}
+@keyframes holo-dash{50%{stroke-dasharray:15 10 100 9;stroke-dashoffset:30}}
+@keyframes holo-pulse{50%{opacity:.25}}
+@media(max-width:760px){
+.brand-v4{gap:8px}.brand-sigil{height:38px;width:38px}.brand-sigil svg{height:27px;width:27px}
+.brand-main{font-size:20px;letter-spacing:.7px}.brand-pre{font-size:6px;letter-spacing:.7px}.brand-post{font-size:6px;letter-spacing:.5px}
+.core.core-v4{width:285px;height:285px;max-width:100%}
+.holo-hud{font-size:7px}
+}
+@media(max-width:380px){.brand-sigil{width:32px;height:32px}.brand-main{font-size:17px}.brand-pre,.brand-post{letter-spacing:0;font-size:5px}}
+@media(prefers-reduced-motion:reduce){.core-v4:before,.holo-mark,.holo-wing,.holo-pulse{animation:none!important}}
