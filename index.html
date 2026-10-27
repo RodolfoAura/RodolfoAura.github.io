@@ -31,22 +31,31 @@
     </div>
     <div class="hero-art" aria-label="Painel holográfico de status">
       <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
-      <div class="core core-v4" aria-label="Núcleo holográfico de dados em movimento">
- <div class="holo-beam"></div>
- <div class="holo-hud holo-hud-top"><span>RD // NEURAL LINK</span><span>CONNECTED</span></div>
- <svg class="holo-mark" viewBox="0 0 240 240" aria-hidden="true">
-  <defs><linearGradient id="holo-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00f0ff"/><stop offset=".5" stop-color="#b0fbff"/><stop offset="1" stop-color="#ff2a6d"/></linearGradient></defs>
-  <g fill="none" stroke="url(#holo-gradient)" stroke-linecap="square">
-   <path class="holo-wing wing-left" d="M106 28L50 60L36 110L50 160L106 194M87 60L70 82L64 111L70 140L87 159" stroke-width="3"/>
-   <path class="holo-wing wing-right" d="M134 28L190 60L204 110L190 160L134 194M153 60L170 82L176 111L170 140L153 159" stroke-width="3"/>
-   <path d="M94 75L120 52L146 75M94 147L120 170L146 147" stroke="#fcee09" stroke-width="2"/>
-   <path d="M104 103L120 87L136 103L120 119Z" stroke-width="2"/>
-   <path class="holo-pulse" d="M120 17V41M120 182V206M17 111H45M195 111H223" stroke="#ff2a6d" stroke-width="3"/>
-   <circle cx="120" cy="111" r="6" stroke="#fcee09" stroke-width="2"/>
-  </g>
-  <g fill="#00f0ff"><circle cx="50" cy="60" r="3"/><circle cx="190" cy="160" r="3"/></g>
+      <div class="core core-v4 neural-core" aria-label="Holograma de diagnóstico cibernético com cabeça em wireframe e leituras técnicas">
+ <div class="neural-glow" aria-hidden="true"></div>
+ <div class="neural-topline"><span>NEURAL INTERFACE</span><span class="neural-live">● LINK ACTIVE</span></div>
+ <svg class="neural-skull" viewBox="0 0 300 300" role="img" aria-label="Rosto cibernético esquemático em ciano e amarelo">
+ <defs><linearGradient id="neural-metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00f0ff"/><stop offset=".55" stop-color="#54f8ff"/><stop offset="1" stop-color="#fcee09"/></linearGradient></defs>
+ <g class="neural-face" stroke="url(#neural-metal)" stroke-width="1.6" fill="none" stroke-linejoin="round">
+  <path class="main-contour" d="M150 42C110 42 85 67 79 104L75 150 90 189 108 223 150 248 192 223 210 189 225 150 221 104C215 67 190 42 150 42Z"/>
+  <path d="M150 42V248M79 104L111 87 150 99 189 87 221 104M75 150L111 132 150 145 189 132 225 150M90 189L121 176 150 186 179 176 210 189M108 223L135 215 150 219 165 215 192 223"/>
+  <path d="M111 87L111 132 121 176 135 215M189 87L189 132 179 176 165 215M111 132L150 99 189 132M111 132L150 145 189 132M121 176L150 186 179 176M135 215L150 186 165 215"/>
+  <path d="M106 119L126 112 143 126 124 140 103 133ZM194 119L174 112 157 126 176 140 197 133Z" stroke="#fcee09"/>
+  <path d="M143 126L150 145 157 126M137 169L150 159 163 169 150 186ZM130 206L150 201 170 206 163 215 137 215Z" stroke="#fcee09"/>
+  <path d="M92 86L120 66 150 60 180 66 208 86M90 189L109 203M210 189L191 203" opacity=".5"/>
+  <circle cx="150" cy="42" r="3" fill="#fcee09" stroke="none"/><circle cx="75" cy="150" r="3" fill="#00f0ff" stroke="none"/><circle cx="225" cy="150" r="3" fill="#00f0ff" stroke="none"/>
+ </g>
+ <g class="neural-reference" fill="none" stroke="#00f0ff" stroke-width="1" opacity=".6">
+  <path d="M35 70H65V92M265 70H235V92M35 228H65V207M265 228H235V207"/>
+  <path d="M48 121H69M231 121H252M48 181H69M231 181H252"/>
+ </g>
+ <g class="neural-readout" font-family="monospace" font-size="8" fill="#8deaf0">
+  <text x="5" y="109">OPTIC_01</text><text x="236" y="109">OPTIC_02</text>
+  <text x="5" y="202">SYNC 99%</text><text x="240" y="202">RD-2077</text>
+ </g>
+ <path class="neural-scan" d="M77 98H223" stroke="#fcee09" stroke-width="1.5" opacity=".65"/>
  </svg>
- <div class="holo-hud holo-hud-bottom"><span>CORE SIGNAL / 99.8%</span><span>◈ LIVE DATA</span></div>
+ <div class="neural-bottomline"><span>FACIAL TOPOLOGY // ONLINE</span><span>SYS.2077</span></div>
 </div>
       <div class="hero-data left">NET://CONNECTED<br>SYS.ID 0x2077<br>BR - ONLINE</div>
       <div class="hero-data right">USER: RODOLFOAURA<br>LEVEL: BUILDING<br>STATE: ACTIVE</div>
