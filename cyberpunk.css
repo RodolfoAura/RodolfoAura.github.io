@@ -123,3 +123,11 @@
 @keyframes neural-sweep{0%,100%{transform:translateY(0);opacity:0}15%{opacity:.6}70%{transform:translateY(110px);opacity:.45}85%{opacity:0}}
 @media(max-width:760px){.neural-core.core-v4{width:285px;height:285px;max-width:100%}.neural-topline,.neural-bottomline{font-size:7px}}
 @media(prefers-reduced-motion:reduce){.neural-face,.neural-reference,.neural-scan{animation:none!important}.neural-scan{opacity:0}}
+
+
+/* PNG overlay: retain the existing orbit animation and only replace the face */
+.neural-core{position:relative}
+.neural-character-png{position:absolute;z-index:5;left:50%;top:50%;width:79%;height:88%;object-fit:contain;transform:translate(-50%,-50%);filter:drop-shadow(0 0 11px #00cfff66);pointer-events:none}
+.neural-character-png[hidden]{display:none!important}
+.neural-core.has-character-image .neural-skull,.neural-core.has-character-image .neural-topline,.neural-core.has-character-image .neural-bottomline{display:none}
+@media(max-width:760px){.neural-character-png{width:78%;height:85%}}
