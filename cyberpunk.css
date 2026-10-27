@@ -131,3 +131,11 @@
 .neural-character-png[hidden]{display:none!important}
 .neural-core.has-character-image .neural-skull,.neural-core.has-character-image .neural-topline,.neural-core.has-character-image .neural-bottomline{display:none}
 @media(max-width:760px){.neural-character-png{width:78%;height:85%}}
+
+
+/* Etapa 1: information-first hero hierarchy without redesigning layout */
+.hero h1{font-size:clamp(38px,4.2vw,64px);line-height:1.05;letter-spacing:-.5px;overflow-wrap:break-word}
+.hero .glitch{overflow-wrap:anywhere}
+.hero .hero-tools{color:var(--white);font-size:14px;line-height:1.5}
+.hero .hero-complement{font-size:14px;line-height:1.6}
+@media(max-width:760px){.hero h1{font-size:clamp(32px,8vw,56px);line-height:1.08}.hero .hero-tools,.hero .hero-complement{font-size:13px}}
